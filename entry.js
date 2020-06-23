@@ -22,6 +22,7 @@ function start(){
         if(type == 0) id+=con[rand(con.length)];
         else id+=vow[rand(vow.length)];
     }
+    alert(id);
     return confirm('이 아이디를 만족하신다면 확인버튼을 눌러주세요.');
 }
 while(!start()){}
