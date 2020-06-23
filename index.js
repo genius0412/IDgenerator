@@ -1,6 +1,6 @@
 let con = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
 let vow = ["a", "e", "i", "o", "u"];
-let id="", type, ra, type, typebef;
+let id="", type, typebef;
 
 function rand(max) {
     max = Math.floor(max);
