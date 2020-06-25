@@ -25,7 +25,7 @@ function start(){
     alert(id);
     return confirm('이 아이디를 만족하신다면 확인버튼을 눌러주세요.');
 }
-while(!start()){}
+while(!start()) id="";
 
 pw = prompt('비밀번호를 입력해주세요.\n! 이 정보는 아이디를 생성할 때에만 사용합니다. 아이디 생성을 완료하면 정보는 사라집니다 !');
 se = prompt("성별 (male/female)\n! 이 정보는 아이디를 생성할 때에만 사용합니다. 아이디 생성을 완료하면 정보는 사라집니다 !");
