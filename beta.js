@@ -35,4 +35,4 @@ function start(){
     copy(id);
     return confirm('다시 하시려면 확인버튼을 눌러주세요.');
 }
-while(!start()) id="";
+while(start()) id="";
