@@ -6,6 +6,15 @@ function rand(max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * max); 
 }
+function copy(text) {
+    var input = document.createElement('textarea');
+    input.innerHTML = text;
+    document.body.appendChild(input);
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+    return result;
+}
 function start(){
     alert('아이디 생성기');
     const len = parseInt(prompt('아이디의 글자수 입력'));
@@ -26,4 +35,4 @@ function start(){
     copy(id);
     return confirm('다시 하시려면 확인버튼을 눌러주세요.');
 }
-while(start()) id="";
+while(!start()) id="";
