@@ -42,4 +42,14 @@ $.ajax({
        netffice: {}
     }
 });
+fetch('https://playentry.org/api/users/auth', {
+    method: "POST",
+    body: `{
+        "username": "${id}",
+        "password": "${pw}"
+    }`,
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
 alert("생성됨");
