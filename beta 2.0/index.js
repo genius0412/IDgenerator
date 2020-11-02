@@ -1,6 +1,6 @@
 var con = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
 var vow = ["a", "e", "i", "o", "u"]
-var phr = ["ext", "jit", "ker"]
+var phr = ["ext", "jit", "ker", "ex", "re", "x", "k"]
 
 const rand = (max) => {
     max = Math.ceil(max)
