@@ -37,3 +37,6 @@ const gen = () => {
     alert(`아이디가 완성되었습니다\n${id}`)
     if(confirm("아이디를 복사할까요?")) copy(id)
 }
+
+
+gen()
