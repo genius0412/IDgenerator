@@ -1,6 +1,6 @@
 var con = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
 var vow = ["a", "e", "i", "o", "u"]
-var phr = ["ext", "jit", "ker", "ex", "re", "x", "k"]
+var phr = ["ext", "jit", "ker", "ex", "re", "xe"]
 
 const rand = (max) => {
     max = Math.ceil(max)
@@ -28,7 +28,8 @@ const gen = () => {
     var id = ""
     
     if(len < 3) console.error('Error: length should be larger than 3');
-    id += phr[rand(phr.length-1)];
+    var temp = rand(phr.length+7)
+    if(temp <= (phr.length-1)) id += phr[temp]
     for(var i = id.length+1; i <= len; i++){
         if(charType(id[i-2]) == "consonant") id += vow[rand(vow.length-1)]
         else id += con[rand(con.length-1)]
