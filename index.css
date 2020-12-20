@@ -1,0 +1,18 @@
+.info{
+    text-align: center;
+    background: mediumspringgreen;
+    height: 60%;
+}
+
+.main{
+    text-align: center;
+    height: 400px;
+}
+
+.length{
+    height: 1.3em;
+    width: 60%;
+    font-size: 4em;
+    border-radius: 100px;
+    text-align: center;
+}
